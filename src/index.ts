@@ -40,11 +40,11 @@ export default {
 					name !== 'Classic Sugar',
 		)
 		.map((
-			{ name, description, image }: { name: string, description: string, image: string }
+			{ name, description, newAerialImage }: { name: string, description: string, newAerialImage: string }
 		) => ({
 			name,
 			description,
-			image,
+			image: newAerialImage,
 		}))
 
 		return new Response(JSON.stringify(cookiesData), {
